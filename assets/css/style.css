@@ -1,0 +1,545 @@
+:root {
+    --dark-blue-color: #136ad5;
+    --light-blue-color: #00aeff;
+    --off-white-color: #f8f9fa;
+    --light-color: #f3f7fd;
+    --yellow-color: #ffc400;
+    --black-color: #2e2e2e;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-color);
+}
+
+.main-btn {
+    background-color: var(--light-blue-color);
+    color: white;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    position: relative;
+    z-index: 10;
+}
+
+.main-btn-dark {
+    background-color: var(--dark-blue-color);
+    color: white;
+    width: max-content;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    position: relative;
+    z-index: 10;
+}
+
+.main-btn-out {
+    background-color: white;
+    color: var(--dark-blue-color);
+    border: solid 1px var(--dark-blue-color);
+    width: max-content;
+    font-size: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    position: relative;
+    z-index: 10;
+}
+
+.main-btn:hover {
+    box-shadow: 0 2px 5px 1px #2e2e2e7a;
+    transform: translateY(-3px);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100000000000000000;
+    transition: all 0.5s;
+}
+
+.header-scrolled {
+    background-color: var(--dark-blue-color);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
+}
+
+/*START HEAD*/
+.head .left {
+    width: max-content;
+}
+
+.head .right {
+    width: max-content;
+}
+
+.head {
+    border-bottom: white solid 1px;
+}
+
+/*END HEAD*/
+/*START NAVBAR*/
+.navbar button:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-nav li a {
+    color: var(--off-white-color);
+    opacity: 70%;
+}
+
+
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a.active {
+    color: var(--off-white-color);
+    opacity: 100%;
+
+}
+
+.navbar .navbar-nav .dropdown-menu a {
+    color: var(--dark-blue-color);
+    opacity: 100%;
+}
+
+.navbar .navbar-nav .dropdown-menu a:hover {
+    color: var(--light-blue-color);
+    opacity: 100%;
+}
+
+/*END NAVBAR*/
+
+/*START HERO*/
+.hero {
+    height: 100vh;
+    background-image: url("../Images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero .overlay {
+    width: 100vw;
+    height: 100vh;
+    opacity: 90%;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, var(--dark-blue-color), var(--light-blue-color));
+}
+
+.hero-title {
+    width: 75%;
+    font-size: 3rem;
+    line-height: 1.6;
+}
+
+
+
+/*END HERO*/
+
+
+
+/*START CATEGORY*/
+.category {
+    height: max-content;
+
+}
+
+.category .card {
+    background-color: var(--light-color);
+}
+
+.category .card svg {
+    color: var(--dark-blue-color);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.category h2 {
+    color: var(--dark-blue-color);
+}
+
+.card {
+    color: var(--black-color);
+}
+
+/*END CATEGORY*/
+/*START SECTION-2*/
+.section-2 {
+    height: max-content;
+    background-color: var(--off-white-color);
+}
+
+.section-2 .image-section-2 {
+    width: 70%;
+    transform: translateY(-12%);
+}
+
+@media (max-width:992px) {
+    .section-2 .image-section-2 {
+        transform: translateY(0);
+        width: 90%;
+    }
+}
+
+.section-2 h2 {
+    color: var(--dark-blue-color);
+}
+
+.section-2 p {
+    line-height: 1.6;
+
+}
+
+.section-2 ul svg {
+    color: var(--light-blue-color);
+}
+
+/*END SECTION-2*/
+
+/*START SECTION-3*/
+.section-3 {
+    height: max-content;
+}
+
+.section-3 h2 {
+    color: var(--dark-blue-color);
+}
+
+.section-3 p {
+    width: 70%;
+    line-height: 1.6;
+}
+
+.section-3 .card {
+    background-color: var(--light-blue-color);
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.section-3 .card:hover {
+    background-color: white;
+    color: var(--light-blue-color);
+    transform: translateY(-8px);
+    box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.15);
+    border: solid 1px var(--light-blue-color);
+}
+
+.section-3 .card:hover svg {
+    background-color: var(--light-blue-color);
+    color: white;
+    transition: all 0.5s
+}
+
+
+
+.section-3 .card svg {
+    background-color: white;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--light-blue-color);
+}
+
+/*END SECTION-3*/
+
+/*START SECTION-4*/
+.section-4 {
+    height: max-content;
+    background-color: var(--off-white-color);
+}
+
+.section-4 h2 {
+    color: var(--dark-blue-color);
+}
+
+.section-4 p {
+    line-height: 1.6;
+    width: 70%;
+
+}
+
+.section-4 .card p {
+    width: 90%;
+}
+
+.section-4 .card {
+    box-shadow: 0 2px 10px 2px rgb(0, 0, 0, 0.1);
+}
+
+.section-4 .card-footer {
+    background-color: white;
+}
+
+
+
+.section-4 .card .lesson {
+    color: var(--dark-blue-color);
+}
+
+.section-4 .card .rate {
+    color: var(--yellow-color);
+}
+
+/*END SECTION-4*/
+
+/*START SECTION-5*/
+.section-5 {
+    height: 70vh;
+    background: linear-gradient(#136ad5db, #00aeffdb), url('../Images/section-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-5 p {
+    width: 70%;
+
+}
+
+
+/*END SECTION-5*/
+
+/*START ABOUT US*/
+.about-us {
+    min-height: 100vh;
+}
+
+.back-image {
+    width: 80%;
+    height: 85%;
+    background-color: var(--dark-blue-color);
+    opacity: 15%;
+    transform: translateX(40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.about-us .image-about-us img {
+    width: 80%;
+
+
+}
+
+
+
+.about-us .text h2 {
+    color: var(--dark-blue-color);
+}
+
+.about-us .text p {
+    line-height: 1.6;
+
+}
+
+.about-us .text ul svg {
+    color: var(--light-blue-color);
+}
+
+.about-us .statistics .holder h5 {
+    color: var(--dark-blue-color);
+}
+
+/*END ABOUT US*/
+
+/*START SCHOOL NEWS*/
+.school-news {
+    height: max-content;
+    background-color: var(--off-white-color);
+}
+
+.school-news h2 {
+    color: var(--dark-blue-color);
+}
+
+.school-news .card-news {
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 2px 10px 2px rgb(0, 0, 0, 0.1);
+}
+
+.school-news .card-news .image-container {
+    background-image: url('../Images/lesson-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+.school-news .card-news .image-container {
+    width: 90%;
+}
+
+.school-news .card-news .image-container img {
+    height: 100%;
+}
+
+.school-news .card-news p {
+    width: 90%;
+    font-size: 0.9rem;
+    opacity: 80%;
+}
+
+.school-news .card-news h5 {
+    color: var(--dark-blue-color);
+}
+
+.school-news .card-news .info {
+    opacity: 30%;
+    font-size: 0.8rem;
+}
+
+/*END SCHOOL NEWS*/
+
+/*START PRICING*/
+.pricing {
+    height: max-content;
+}
+
+.pricing h2 {
+    color: var(--dark-blue-color);
+}
+
+
+.pricing span {
+    width: max-content;
+}
+
+.pricing p {
+    width: 90%;
+    line-height: 1.6;
+}
+
+.pricing .card {
+    width: 100%;
+    background-color: white;
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/*END PRICING*/
+.reviews {
+    min-height: max-content;
+    background-color: var(--off-white-color);
+}
+
+.reviews h2,
+.reviews h5 {
+    color: var(--dark-blue-color);
+}
+
+.reviews p {
+
+    line-height: 1.6;
+}
+
+.reviews .image-review {
+    width: 100px;
+    height: 100px;
+    background-image: url('../Images/man-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+.reviews .circles button {
+    width: 10px;
+    height: 12px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 100px;
+    border-style: none;
+}
+
+.reviews .circles button:focus,
+.reviews .circles button:hover {
+    background-color: var(--dark-blue-color);
+}
+
+/*START REVIEWS*/
+
+/*START CHOOSE US*/
+.choose-us {
+    height: max-content;
+}
+
+.choose-us .second-img {
+    background-image: url('../Images/choose-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    max-height: 200px;
+    max-width: 150px;
+}
+
+.choose-us h2 {
+    color: var(--dark-blue-color);
+}
+
+.choose-us .good-teachers {
+    background-color: var(--dark-blue-color);
+    color: white;
+
+}
+
+.choose-us .good-teachers::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    transform: translateY(-4px)translatex(-8px);
+
+    background-color: white;
+}
+
+/*END CHOOSE US*/
+
+/*START FOOTER*/
+footer {
+    height: max-content;
+    background-color: var(--dark-blue-color);
+}
+
+
+
+footer .about-us-footer a svg {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+footer .project h5,
+footer .project ul {
+    width: max-content;
+    margin-left: 30%;
+}
+
+footer .gallery .img-container {
+    width: 250;
+    height: 250;
+}
+
+/*END FOOTER*/
