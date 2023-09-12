@@ -461,6 +461,18 @@ header {
     background-position: center;
 }
 
+.reviews .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--light-blue-color);
+
+}
+
+.reviews .carousel-indicators .active {
+    background-color: var(--dark-blue-color);
+}
+
 .reviews .circles button {
     width: 10px;
     height: 12px;
@@ -472,6 +484,12 @@ header {
 .reviews .circles button:focus,
 .reviews .circles button:hover {
     background-color: var(--dark-blue-color);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    color: var(--light-blue-color);
 }
 
 /*START REVIEWS*/
